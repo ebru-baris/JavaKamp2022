@@ -1,15 +1,15 @@
 package ikinciHaftaOdevler;
 
-public class Methods {
+public class Methods1Devam {
 
 	public static void main(String[] args) {
-	sayiBulmaca();
+		sayiBulmaca();
 	}
 	
 	//camel casing
    public static void sayiBulmaca() {
 			   int[] sayilar = new int[] {1,2,5,7,9,0};
-			   int aranacak = 6;
+			   int aranacak = 2;
 			   boolean varMi= false;
 			   
 			   for(int sayi : sayilar) {
@@ -18,18 +18,18 @@ public class Methods {
 					   break;
 				   }
 			   }
-			   
+			   String mesaj=" "; 
 			   if(varMi) {
-				  //System.out.println("Sayi mevcuttur:" + aranacak);
-				   mesajVer(7); //mesajVer(aranacak);
+				 mesaj = "Sayi mevcuttur:" + aranacak;
+				   mesajVer(mesaj);
 			   }else {
-				   System.out.println("Sayi mevcut degildir:"+ aranacak);
+				   mesajVer("Sayi mevcut degildir:"+ aranacak);
 			   }
 
 	}
-     public static void mesajVer(int aranacak) {
-    	 System.out.println("Sayi mevcuttur:" + aranacak);
-	 
- }
+     public static void mesajVer(String mesaj) {
+    	 System.out.println(mesaj);
+
+	}
 
 }
